@@ -1,0 +1,32 @@
+{
+  "info" :
+  {
+    "name" : "qxiShowdown",
+
+    "summary" : "make the showdown html-md converter js library available as a qx class",
+    "description" : "",
+
+    "homepage" : "",
+
+    "license" : "MIT license",
+    "authors" : [
+  {
+    "name": "Matthias Bloch",
+    "email": "matthias.bloch@oetiker.ch"
+  }
+],
+
+    "version" : "1.8.7",
+    "qooxdoo-range": "6.0.0-alpha-20180529"
+  },
+
+  "provides" :
+  {
+    "namespace"   : "qxShowdown",
+    "encoding"    : "utf-8",
+    "class"       : "source/class",
+    "resource"    : "source/resource",
+    "translation" : "source/translation",
+    "type"        : "contribution"
+  }
+}

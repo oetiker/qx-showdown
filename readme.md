@@ -4,7 +4,8 @@ make the showdownjs.com html-md converter js library available as a qx class
 
 # SYNOPSIS
 
-    let converter = qx.showdown.new();
+    qxShowdown.Load;
+    let converter = new showdown.Converter();
     let md = '# hello, markdown!';
     let html = converter.makeHtml(md);
 
