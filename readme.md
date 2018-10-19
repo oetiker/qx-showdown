@@ -1,15 +1,19 @@
 # qx-showdown
 
-make the showdownjs.com html-md converter js library available as a qx class
+make the showdownjs.com html-md converter js library available in a qooxdoo application
 
 # SYNOPSIS
 
-    qxShowdown.Load;
-    let converter = new showdown.Converter();
-    let md = '# hello, markdown!';
-    let html = converter.makeHtml(md);
-
-    # <h1 id="hellomarkdown">hello, markdown!</h1>
+```javascript
+/* the following line gets qooxdoo to load the class which does not actually
+   do anything itself, but it contains a copy of showdownjs which is now available
+   in your code */
+qxShowdown.Load;
+/* now use showdown */
+let converter = new showdown.Converter();
+let md = '# hello, markdown!';
+let html = converter.makeHtml(md);
+```
 
 # REFERENCE
 
